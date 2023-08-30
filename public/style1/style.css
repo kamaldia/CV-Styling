@@ -1,0 +1,196 @@
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+Header {
+  background-color: rgba(128, 128, 128, 0.717);
+}
+
+Header > div {
+  display: flex;
+}
+
+Header > div > hgroup {
+  color: red;
+  padding-left: 12%;
+  margin-top: 20px;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about {
+  width: 50%;
+}
+
+h3 + p {
+  padding-right: 5%;
+}
+
+h3 {
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.407);
+  padding-bottom: 0px;
+  height: 120px;
+}
+
+h3::before {
+  content: ".";
+  color: red;
+  font-size: 115px;
+}
+
+.experience {
+  padding-right: 5%;
+}
+
+#competencies {
+  width: 50%;
+}
+
+#experiences {
+  width: 50%;
+}
+
+#education {
+  width: 50%;
+}
+
+#hobbies {
+  width: 50%;
+}
+
+#contact {
+  width: 50%;
+}
+
+.experience-type {
+  color:red;
+}
+
+.experience-institution {
+  color: red;
+  font-weight: normal;
+}
+
+.experience-institution::before {
+  content: "@ ";
+  color: red;
+}
+
+.experience-location::before {
+  color:rgba(128, 128, 128, 0.709);
+  content: "In";
+}
+
+.experience-date-separator {
+  color: red;
+}
+
+.experience-details {
+  text-indent: 10px;
+}
+
+.experience-location , .day , .month , .year {
+  color:rgba(128, 128, 128, 0.706);
+}
+
+h4 {
+ margin-bottom: 2px;
+}
+
+.contact {
+  background-color: black;
+  display: flex;
+  margin: 0;
+}
+
+.contact-type {
+  background-color: red;
+  color: white;
+  width: 150px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.contacts {
+  position: absolute;
+  right: 0;
+  top: 1.5%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact-value {
+  color: red;
+  width: 38%;
+  background-color: black;
+  margin-left:2px;
+  height: 23px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+#contact h3 {
+  display:none;
+  position: absolute;
+}
+
+.skill {
+  background-color: grey;
+  padding: 2px;
+  margin-bottom: 2px;
+  height: 25px;
+}
+
+.skills-primary::before {
+  content: "Main";
+  display: block;
+}
+
+.skills-secondary::before {
+  content: "Other";
+}
+
+.skill[data-skill="5"] span {
+  background-color: red;
+  width: 50%;
+  display: block;
+}
+
+.skill[data-skill="3"] span{
+  background-color: red;
+  width: 30%;
+  display: block;
+}
+
+.skill[data-skill="1"] span{
+  background-color: red;
+  width: 15%;
+  display: block;
+}
+
+.skill[data-skill="9"] span{
+  background-color: red;
+  width: 90%;
+  display: block;
+}
+
+.skill[data-skill="7"] span{
+  background-color: red;
+  width: 70%;
+  display: inline-block;
+}
+
+.skill span {
+  color: white;
+}
